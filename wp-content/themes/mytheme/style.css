@@ -53,3 +53,6 @@ body{
         width: 100%;
     }
 }
+.single img{
+    max-width: 100%;
+}

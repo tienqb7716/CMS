@@ -13,7 +13,6 @@ $post = get_post();
 get_header();
 ?>
 
-
 <div id="primary" class="content-area">
 	<img class="img-fluid w-50"  src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID))[0]; ?>" alt="">
 	
