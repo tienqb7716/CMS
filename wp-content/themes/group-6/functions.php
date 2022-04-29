@@ -47,11 +47,25 @@ function group_6_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus(
-		array(
-			'menu-1' => esc_html__( 'Primary', 'group-6' ),
-		)
-	);
+	// register_nav_menus(
+	// 	array(
+	// 		'menu-1' => esc_html__( 'Primary', 'group-6' ),
+	// 	)
+	// );
+		/**
+@ Tạo menu vào theme
+@ sử dụng hook wp_enqueue_scripts() để hiển thị nó ra ngoài front-end
+**/
+add_theme_support( 'menus' );
+
+function register_menus() {
+  register_nav_menus(
+    array(
+      'top-menu' => 'Top Menu',
+    )
+  );
+}
+add_action( 'init', 'register_menus' ); 
 
 	/*
 		* Switch default core markup for search form, comment form, and comments

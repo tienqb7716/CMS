@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The header for our theme
  *
@@ -12,48 +13,47 @@
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
+
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="<?php bloginfo('charset'); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+
 
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'group-6' ); ?></a>
+	<?php wp_body_open(); ?>
+	<div id="page" class="site">
+		<?php
+		/**
+		 * @see  buzzstore_skip_links() - 5
+		 */
+		do_action('buzzstore_header_before');
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$group_6_description = get_bloginfo( 'description', 'display' );
-			if ( $group_6_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $group_6_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+		/**
+		 * @see  buzzstore_top_header() - 15
+		 * @see  buzzstore_main_header() - 20
+		 */
+		do_action('buzzstore_header');
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'group-6' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+		do_action('buzzstore_header_after');
+		?>
+		<nav class="buzz-menulink" id="content">
+			<div class="buzz-logo">
+				<?php if (function_exists('the_custom_logo')) {
+					the_custom_logo();
+				} ?>
+			</div>
+
+			<div class="box-header-nav main-menu-wapper">
+				<?php wp_nav_menu(array(
+					'theme_location' => 'top-menu',
+					'menu' => 'Header menu',
+					'menu_id'        => 'header-menu',
+					'menu_class'      => 'main-menu',
+				)); ?>
+			</div>
+		</nav>
