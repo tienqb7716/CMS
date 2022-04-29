@@ -6815,3 +6815,6 @@ ul.products.list li.product .woocommerce-product-details__short-description {
         width: 100%;
     }
 }
+.single img{
+    max-width: 100%;
+}
