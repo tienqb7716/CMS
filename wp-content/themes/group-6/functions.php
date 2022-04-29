@@ -99,9 +99,26 @@ function group_6_setup() {
 			'flex-height' => true,
 		)
 	);
+	_styles();
+
+	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array ( 'jquery' ), 1.1, true);
+		
 }
 add_action( 'after_setup_theme', 'group_6_setup' );
 
+function _styles() {
+	/*
+	* Hàm get_stylesheet_uri() sẽ trả về giá trị dẫn đến file style.css của theme
+	* Nếu sử dụng child theme, thì file style.css này vẫn load ra từ theme mẹ
+	*/
+	wp_register_style( 'bootstrap', get_template_directory_uri() . '/bootstrap.min.css',
+	'all' );
+	wp_enqueue_style( 'bootstrap' );
+	wp_register_style( 'main-style', get_template_directory_uri() . '/style.css',
+	'all' );
+	wp_enqueue_style( 'main-style' );
+	
+}
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *

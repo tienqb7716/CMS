@@ -1,0 +1,13 @@
+2022-04-29T00:59:42+00:00 CRITICAL Uncaught Error: Call to undefined function _styles() in C:\wamp64\www\CMS\wp-content\themes\group-6\functions.php:102
+Stack trace:
+#0 C:\wamp64\www\CMS\wp-includes\class-wp-hook.php(303): group_6_setup('')
+#1 C:\wamp64\www\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#2 C:\wamp64\www\CMS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\CMS\wp-settings.php(556): do_action('after_setup_the...')
+#4 C:\wamp64\www\CMS\wp-config.php(89): require_once('C:\\wamp64\\www\\C...')
+#5 C:\wamp64\www\CMS\wp-load.php(50): require_once('C:\\wamp64\\www\\C...')
+#6 C:\wamp64\www\CMS\wp-blog-header.php(13): require_once('C:\\wamp64\\www\\C...')
+#7 C:\wamp64\www\CMS\index.php(17): require('C:\\wamp64\\www\\C...')
+#8 {main}
+  thrown in C:\wamp64\www\CMS\wp-content\themes\group-6\functions.php on line 102
+
