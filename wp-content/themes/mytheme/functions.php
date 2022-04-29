@@ -30,3 +30,37 @@ function my_styles() {
     wp_enqueue_style( 'main-style' );
     }
     add_action( 'wp_enqueue_scripts', 'my_styles' );
+/**
+@ Tạo menu vào theme
+@ sử dụng hook wp_enqueue_scripts() để hiển thị nó ra ngoài front-end
+**/
+add_theme_support( 'menus' );
+
+function register_menus() {
+  register_nav_menus(
+    array(
+      'top-menu' => 'Top Menu',
+      'main-menu' => 'Main Menu' ,
+      'footer-menu' => 'Footer Menu' ,
+    )
+  );
+}
+add_action( 'init', 'register_menus' ); 
+
+//Logo
+// function theme_name_custom_logo_setup() {
+//   $defaults = array(
+//       'height'               => 100,
+//       'width'                => 400,
+//       'flex-height'          => true,
+//       'flex-width'           => true,
+//       'header-text'          => array( 'site-title', 'site-description' ),
+//       'unlink-homepage-logo' => true, 
+//   );
+
+//   add_theme_support( 'custom-logo', $defaults );
+// }
+add_theme_support( 'custom-logo' );
+
+
+?>
