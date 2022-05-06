@@ -1901,8 +1901,8 @@ object {
 }
 
 #primary {
-    width: 70%;
-    float: left;
+    width: 100%;
+    /* float: left; */
     padding-left: 20px;
     padding-right: 20px;
     box-shadow: 1px 1px 12px 2px #e1e1e1ba;
@@ -2644,7 +2644,7 @@ object {
     float: left;
 }
 
-.product-search-field,
+.wc-block-product-search__field,
 .header-search_filter .formDropdown {
     width: 100%;
     font-size: 14px;
@@ -2672,7 +2672,7 @@ object {
     border-radius: 8px 0 0 8px;
 }
 
-.product-search-field {
+.wc-block-product-search__field {
     text-transform: none;
     font-size: 16px;
 }
@@ -2701,7 +2701,7 @@ object {
     top: 0;
 }
 
-.product-search-field {
+.wc-block-product-search__field {
     font-size: 13px;
     font-weight: normal;
     padding: 10px 20px;
@@ -2711,17 +2711,29 @@ object {
 .product-search {
     position: relative;
 }
+.wc-block-product-search.wp-block-woocommerce-product-search form{
+    width: 500px;
+    margin: 0 auto;
+}
 
-.header-search_form .product-search-field {
+.wc-block-product-search__fields .wc-block-product-search__field {
     padding-right: 48px;
     padding-left: 10px;
     width: 100%;
     border-radius: 0 8px 8px 0;
 }
+.wp-block-product-new .wc-block-grid__products .wc-block-grid__product-image img{
+    height: 300px;
+    width: 250px;
+    max-width: 100%;
+}
 
-button.product-search {
+.wc-block-product-search__label{
+    font-weight: bold;
+}
+button.wc-block-product-search__button {
     width: 55px;
-    height: 100%;
+    /* height: 100%; */
     font-size: 16px;
     line-height: 44px;
     position: absolute;
@@ -3028,7 +3040,7 @@ button.product-search {
         position: absolute;
         top: 50%;
         right: 0;
-        font-family: 'FontAwesome';
+        font-family: "FontAwesome";
         width: 10px;
         height: 10px;
         color: #333;
@@ -4717,14 +4729,14 @@ footer .woocommerce .star-rating {
 }
 
 
-/* .woocommerce a.added_to_cart:before,
+.woocommerce a.added_to_cart:before,
 .woocommerce a.button.add_to_cart_button:before,
 .woocommerce a.button.product_type_grouped:before,
 .woocommerce a.button.product_type_external:before,
 .woocommerce a.button.product_type_variable:before  {
     content: '\f07a';
     position: absolute;
-    font-family: FontAwesome;
+    font-family: 'FontAwesome';
     left: 0px;
     top: 0px;
     font-size: 14px;
@@ -4734,12 +4746,12 @@ footer .woocommerce .star-rating {
     color:#ffffff;
     text-align:center;
     border-right: 1px solid #fff;
-} */
+}
 
 .woocommerce a.button.product_type_variable:before {
     content: '\f233';
     position: absolute;
-    font-family: FontAwesome;
+    font-family: 'FontAwesome';
     left: 0px;
     top: 0px;
     font-size: 14px;
@@ -5443,7 +5455,7 @@ ul.products.list li.product hr {
     border-radius: 4px;
 }
 
-.single-product .header-search_form button {
+.single-product .wc-block-product-search__fields button {
     padding: 0;
 }
 
@@ -7391,7 +7403,7 @@ ul.buzz-contactwrap li a:hover {
         top: 55px;
         height: 55px;
     }
-    .header-search_form .product-search-field {
+    .wc-block-product-search__fields .wc-block-product-search__field {
         border-radius: 8px 0 0 8px;
     }
     .form-group {

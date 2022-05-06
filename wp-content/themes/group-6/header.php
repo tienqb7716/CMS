@@ -27,22 +27,25 @@
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
-		<?php
-		/**
-		 * @see  buzzstore_skip_links() - 5
-		 */
-		do_action('buzzstore_header_before');
+		
+			<div class="buzz-container buzz-clearfix">
+				<div class="buzz-site-branding">
+					<button class="buzz-toggle mobile-only" data-toggle-target=".header-mobile-menu" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
+						<div class="one"></div>
+						<div class="two"></div>
+						<div class="three"></div>
+					</button>
 
-		/**
-		 * @see  buzzstore_top_header() - 15
-		 * @see  buzzstore_main_header() - 20
-		 */
-		do_action('buzzstore_header');
 
-		do_action('buzzstore_header_after');
-		?>
+				</div><!-- .site-branding -->
+
+				<?php do_action('buzzstore_search'); ?>
+				<!-- search section -->
+
+			</div>
+		
 		<nav class="buzz-menulink" id="content">
-			<div class="buzz-logo">
+			<div class="logo-custom">
 				<?php if (function_exists('the_custom_logo')) {
 					the_custom_logo();
 				} ?>

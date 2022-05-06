@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The sidebar containing the main widget area
  *
@@ -7,11 +8,26 @@
  * @package group-6
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+if (!is_active_sidebar('buzzsidebarone')) {
 	return;
 }
-?>
 
-<aside id="secondary" class="widget-area">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-</aside><!-- #secondary -->
+
+if (is_active_sidebar('buzzsidebarone')) {
+?>
+	<section id="secondaryright" class="widget-area" role="complementary">
+		<?php dynamic_sidebar('buzzsidebarone'); ?>
+	</section><!-- #secondary -->
+<?php
+}
+
+if (is_active_sidebar('buzzstorefooterone')) {
+?>
+	<div class="rightsidebar">
+		<section id="secondaryright" class="widget-area" role="complementary">
+			<?php dynamic_sidebar('buzzstorefooterone'); ?>
+		</section><!-- #secondary -->
+	</div>
+
+<?php
+}
