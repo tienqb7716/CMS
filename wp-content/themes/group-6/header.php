@@ -29,7 +29,7 @@
 
 		<header id="masthead" class="site-header">
 
-			<nav class="navbar navbar-expand-md navbar-light " style="background: #ffd400;">
+			<nav class="navbar navbar-expand-md navbar-light " style="background: yellowgreen;">
 			<div class="container">
 			<?php
 				the_custom_logo();

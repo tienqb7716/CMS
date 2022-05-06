@@ -955,3 +955,50 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
+.card{
+	overflow: hidden;
+	box-shadow:  0 0 10px rgba(51, 51, 51, 0.315);
+	border: 0;
+}
+.woocommerce .product .add_to_cart_button {
+	background-color: yellowgreen;
+	margin: 10px auto;
+	text-align: center;
+	display: inline-block;
+}
+.woocommerce ul.products li.product .woocommerce-loop-product__title{
+	font-size: 1.5rem;
+	color: yellowgreen;
+	text-align: center;
+}
+.woocommerce ul.products li.product:hover .woocommerce-loop-product__title{
+	color: rgb(110, 159, 11);
+}
+.product .attachment-woocommerce_thumbnail{
+	transition: .25s;
+}
+.woocommerce ul.products li.product .price{
+	display: block;
+	text-align: center;
+}
+.product:hover .attachment-woocommerce_thumbnail{
+	transform: scale(1.1);
+
+}
+.entry-title{
+	text-align: center;
+	font-size: 3rem;
+	color: rgb(110, 159, 11);
+}
+.added_to_cart{
+	margin: 0 auto 10px auto;
+	font-size: 0.7rem;
+	font-style: italic;
+	font-weight: bold;
+}
+.woocommerce a.added_to_cart{
+	color: yellowgreen;
+}
+.woocommerce .single-product{
+	padding: 1.5rem;
+}
