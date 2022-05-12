@@ -1,0 +1,12 @@
+2022-05-03T16:32:44+00:00 CRITICAL Uncaught TypeError: base64_decode(): Argument #1 ($string) must be of type string, array given in C:\xampp\htdocs\CMS\wp-content\plugins\ultimate-responsive-image-slider\recover-slider.php:30
+Stack trace:
+#0 C:\xampp\htdocs\CMS\wp-content\plugins\ultimate-responsive-image-slider\recover-slider.php(30): base64_decode(Array)
+#1 C:\xampp\htdocs\CMS\wp-content\plugins\ultimate-responsive-image-slider\ultimate-responsive-image-slider.php(694): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(303): uris_recover_slider_page('')
+#3 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\CMS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\CMS\wp-admin\admin.php(259): do_action('ris_gallery_pag...')
+#6 C:\xampp\htdocs\CMS\wp-admin\edit.php(10): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\CMS\wp-content\plugins\ultimate-responsive-image-slider\recover-slider.php on line 30
+
