@@ -44,15 +44,7 @@ get_header();
 
 					endwhile;
 					 
-						
-
 					
-					the_posts_navigation(
-						array(
-							'prev_text' => esc_html__('Prev', 'group6'),
-							'next_text' => esc_html__('Next', 'group6'),
-						)
-					);
 
 				else :
 

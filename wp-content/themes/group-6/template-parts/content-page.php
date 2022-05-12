@@ -11,9 +11,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="entry-content">
+	<div class="entry-content"> 
 		<?php
 		the_content();
+		echo the_ID();
 		do_shortcode('[group6_new_post]');
 		wp_link_pages(
 			array(
