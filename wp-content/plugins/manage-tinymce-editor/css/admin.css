@@ -1,0 +1,30 @@
+p.submit { border-bottom:1px dotted #d4d4d4; }
+
+.form-table th { height:30px; padding:0; }
+.form-table td { height:30px; padding:0; vertical-align:top; }
+
+form h3 { padding:8px 12px; background:#D5D4D4; }
+
+.wpmte_btn_icon { padding:3px; margin-right:10px; background:#fafafa; border:1px solid #999; color:#23282d; -webkit-box-shadow:inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08); box-shadow:inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08); }
+.wpmte_btn_icon .dashicons-before { line-height:20px; }
+.wpmte_btn_icon .dashicons-before:before { color:#777; width:20px; height:20px; text-align:center; margin:0; padding:0; }
+.wpmte_btn_icon .dashicons-editor-textcolor:before { height:16px; line-height:18px; border-bottom:3px solid #777; }
+.wpmte_btn_icon .dashicons-editor-backcolor:before { background:#bbb; }
+
+.wpmte_btn_icon .dashicons-editor-te:before { content:''; background:no-repeat center center; background-size:18px 18px; }
+	.wpmte_btn_icon .dashicons-editor-cut:before { background-image:url(../img/icon-cut.png); background-image:url(../img/icon-cut.svg),none; }
+	.wpmte_btn_icon .dashicons-editor-copy:before { background-image:url(../img/icon-copy.png); background-image:url(../img/icon-copy.svg),none; }
+	.wpmte_btn_icon .dashicons-editor-paste:before { background-image:url(../img/icon-paste.png); background-image:url(../img/icon-paste.svg),none; }
+	.wpmte_btn_icon .dashicons-editor-sup:before { background-image:url(../img/icon-superscript.png); background-image:url(../img/icon-superscript.svg),none; background-position:right top; }
+	.wpmte_btn_icon .dashicons-editor-sub:before { background-image:url(../img/icon-subscript.png); background-image:url(../img/icon-subscript.svg),none; background-position:right bottom; }
+	.wpmte_btn_icon .dashicons-editor-empty:before { background-image:url(../img/icon-empty.png); background-image:url(../img/icon-empty.svg),none; background-position:right center; }
+
+.wpmte_btn_label { font-size:13px; }
+
+.wpmte_extra_info { padding:10px 20px; margin:20px auto; border:1px solid #e5e5e5; background:#fff; box-shadow:0 1px 1px rgba(0,0,0,.04); }
+
+@media screen and (max-width: 782px) {
+	.form-table tr { border-bottom:1px dotted #d4d4d4; }
+		.form-table th, .form-table td { display:inline-block; vertical-align:middle; margin-top:12px; margin-bottom:6px; }
+		.form-table td { float:right; }
+}

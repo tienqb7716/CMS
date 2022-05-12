@@ -65,8 +65,8 @@
 							</div>
 						</li>
 					</ul>
-					<form class="d-flex my-2 my-lg-0">
-						<input class="form-control me-sm-2" type="text" placeholder="Nhập sản phẩm cần tìm">
+					<form class="d-flex my-2 my-lg-0" method="GET" action="shop">
+						<input class="form-control me-sm-2" name="s" type="text" placeholder="Nhập sản phẩm cần tìm">
 						<button class="btn btn-outline-success btn-sm my-2 my-sm-0" type="submit">Tìm</button>
 					</form>
 				</div>

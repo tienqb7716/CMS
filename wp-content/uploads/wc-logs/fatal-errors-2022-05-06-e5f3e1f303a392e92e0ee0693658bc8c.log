@@ -1,0 +1,104 @@
+2022-05-06T00:36:42+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function append_query_string(), 1 passed in C:\wamp64\www\CMS\wp-includes\class-wp-hook.php on line 305 and at least 2 expected in C:\wamp64\www\CMS\wp-content\themes\mytheme\functions.php:33
+Stack trace:
+#0 C:\wamp64\www\CMS\wp-includes\class-wp-hook.php(305): append_query_string('http://localhos...')
+#1 C:\wamp64\www\CMS\wp-includes\plugin.php(189): WP_Hook->apply_filters('http://localhos...', Array)
+#2 C:\wamp64\www\CMS\wp-includes\link-template.php(304): apply_filters('post_link', 'http://localhos...', Object(WP_Post), false)
+#3 C:\wamp64\www\CMS\wp-includes\link-template.php(27): get_permalink(Object(WP_Post))
+#4 C:\wamp64\www\CMS\wp-content\themes\mytheme\index.php(21): the_permalink()
+#5 C:\wamp64\www\CMS\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\C...')
+#6 C:\wamp64\www\CMS\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\C...')
+#7 C:\wamp64\www\CMS\index.php(17): require('C:\\wamp64\\www\\C...')
+#8 {main}
+  thrown in C:\wamp64\www\CMS\wp-content\themes\mytheme\functions.php on line 33
+
+2022-05-06T00:37:00+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function append_query_string(), 1 passed in C:\wamp64\www\CMS\wp-includes\class-wp-hook.php on line 305 and at least 2 expected in C:\wamp64\www\CMS\wp-content\themes\mytheme\functions.php:33
+Stack trace:
+#0 C:\wamp64\www\CMS\wp-includes\class-wp-hook.php(305): append_query_string('http://localhos...')
+#1 C:\wamp64\www\CMS\wp-includes\plugin.php(189): WP_Hook->apply_filters('http://localhos...', Array)
+#2 C:\wamp64\www\CMS\wp-includes\link-template.php(304): apply_filters('post_link', 'http://localhos...', Object(WP_Post), false)
+#3 C:\wamp64\www\CMS\wp-includes\link-template.php(27): get_permalink(Object(WP_Post))
+#4 C:\wamp64\www\CMS\wp-content\themes\mytheme\index.php(21): the_permalink()
+#5 C:\wamp64\www\CMS\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\C...')
+#6 C:\wamp64\www\CMS\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\C...')
+#7 C:\wamp64\www\CMS\index.php(17): require('C:\\wamp64\\www\\C...')
+#8 {main}
+  thrown in C:\wamp64\www\CMS\wp-content\themes\mytheme\functions.php on line 33
+
+2022-05-06T00:37:01+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function append_query_string(), 1 passed in C:\wamp64\www\CMS\wp-includes\class-wp-hook.php on line 305 and at least 2 expected in C:\wamp64\www\CMS\wp-content\themes\mytheme\functions.php:33
+Stack trace:
+#0 C:\wamp64\www\CMS\wp-includes\class-wp-hook.php(305): append_query_string('http://localhos...')
+#1 C:\wamp64\www\CMS\wp-includes\plugin.php(189): WP_Hook->apply_filters('http://localhos...', Array)
+#2 C:\wamp64\www\CMS\wp-includes\link-template.php(304): apply_filters('post_link', 'http://localhos...', Object(WP_Post), false)
+#3 C:\wamp64\www\CMS\wp-includes\link-template.php(27): get_permalink(Object(WP_Post))
+#4 C:\wamp64\www\CMS\wp-content\themes\mytheme\index.php(21): the_permalink()
+#5 C:\wamp64\www\CMS\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\C...')
+#6 C:\wamp64\www\CMS\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\C...')
+#7 C:\wamp64\www\CMS\index.php(17): require('C:\\wamp64\\www\\C...')
+#8 {main}
+  thrown in C:\wamp64\www\CMS\wp-content\themes\mytheme\functions.php on line 33
+
+2022-05-06T00:37:01+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function append_query_string(), 1 passed in C:\wamp64\www\CMS\wp-includes\class-wp-hook.php on line 305 and at least 2 expected in C:\wamp64\www\CMS\wp-content\themes\mytheme\functions.php:33
+Stack trace:
+#0 C:\wamp64\www\CMS\wp-includes\class-wp-hook.php(305): append_query_string('http://localhos...')
+#1 C:\wamp64\www\CMS\wp-includes\plugin.php(189): WP_Hook->apply_filters('http://localhos...', Array)
+#2 C:\wamp64\www\CMS\wp-includes\link-template.php(304): apply_filters('post_link', 'http://localhos...', Object(WP_Post), false)
+#3 C:\wamp64\www\CMS\wp-includes\link-template.php(27): get_permalink(Object(WP_Post))
+#4 C:\wamp64\www\CMS\wp-content\themes\mytheme\index.php(21): the_permalink()
+#5 C:\wamp64\www\CMS\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\C...')
+#6 C:\wamp64\www\CMS\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\C...')
+#7 C:\wamp64\www\CMS\index.php(17): require('C:\\wamp64\\www\\C...')
+#8 {main}
+  thrown in C:\wamp64\www\CMS\wp-content\themes\mytheme\functions.php on line 33
+
+2022-05-06T00:37:28+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function append_query_string(), 1 passed in C:\wamp64\www\CMS\wp-includes\class-wp-hook.php on line 305 and at least 2 expected in C:\wamp64\www\CMS\wp-content\themes\mytheme\functions.php:33
+Stack trace:
+#0 C:\wamp64\www\CMS\wp-includes\class-wp-hook.php(305): append_query_string('http://localhos...')
+#1 C:\wamp64\www\CMS\wp-includes\plugin.php(189): WP_Hook->apply_filters('http://localhos...', Array)
+#2 C:\wamp64\www\CMS\wp-includes\link-template.php(304): apply_filters('post_link', 'http://localhos...', Object(WP_Post), false)
+#3 C:\wamp64\www\CMS\wp-includes\link-template.php(27): get_permalink(Object(WP_Post))
+#4 C:\wamp64\www\CMS\wp-content\themes\mytheme\index.php(21): the_permalink()
+#5 C:\wamp64\www\CMS\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\C...')
+#6 C:\wamp64\www\CMS\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\C...')
+#7 C:\wamp64\www\CMS\index.php(17): require('C:\\wamp64\\www\\C...')
+#8 {main}
+  thrown in C:\wamp64\www\CMS\wp-content\themes\mytheme\functions.php on line 33
+
+2022-05-06T00:39:57+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function append_query_string(), 1 passed in C:\wamp64\www\CMS\wp-includes\class-wp-hook.php on line 305 and at least 2 expected in C:\wamp64\www\CMS\wp-content\themes\mytheme\functions.php:33
+Stack trace:
+#0 C:\wamp64\www\CMS\wp-includes\class-wp-hook.php(305): append_query_string('http://localhos...')
+#1 C:\wamp64\www\CMS\wp-includes\plugin.php(189): WP_Hook->apply_filters('http://localhos...', Array)
+#2 C:\wamp64\www\CMS\wp-includes\link-template.php(304): apply_filters('post_link', 'http://localhos...', Object(WP_Post), false)
+#3 C:\wamp64\www\CMS\wp-includes\link-template.php(27): get_permalink(Object(WP_Post))
+#4 C:\wamp64\www\CMS\wp-content\themes\mytheme\index.php(21): the_permalink()
+#5 C:\wamp64\www\CMS\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\C...')
+#6 C:\wamp64\www\CMS\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\C...')
+#7 C:\wamp64\www\CMS\index.php(17): require('C:\\wamp64\\www\\C...')
+#8 {main}
+  thrown in C:\wamp64\www\CMS\wp-content\themes\mytheme\functions.php on line 33
+
+2022-05-06T00:40:06+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function append_query_string(), 1 passed in C:\wamp64\www\CMS\wp-includes\class-wp-hook.php on line 305 and at least 2 expected in C:\wamp64\www\CMS\wp-content\themes\mytheme\functions.php:33
+Stack trace:
+#0 C:\wamp64\www\CMS\wp-includes\class-wp-hook.php(305): append_query_string('http://localhos...')
+#1 C:\wamp64\www\CMS\wp-includes\plugin.php(189): WP_Hook->apply_filters('http://localhos...', Array)
+#2 C:\wamp64\www\CMS\wp-includes\link-template.php(304): apply_filters('post_link', 'http://localhos...', Object(WP_Post), false)
+#3 C:\wamp64\www\CMS\wp-includes\link-template.php(27): get_permalink(Object(WP_Post))
+#4 C:\wamp64\www\CMS\wp-content\themes\mytheme\index.php(21): the_permalink()
+#5 C:\wamp64\www\CMS\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\C...')
+#6 C:\wamp64\www\CMS\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\C...')
+#7 C:\wamp64\www\CMS\index.php(17): require('C:\\wamp64\\www\\C...')
+#8 {main}
+  thrown in C:\wamp64\www\CMS\wp-content\themes\mytheme\functions.php on line 33
+
+2022-05-06T00:40:21+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function append_query_string(), 1 passed in C:\wamp64\www\CMS\wp-includes\class-wp-hook.php on line 305 and at least 2 expected in C:\wamp64\www\CMS\wp-content\themes\mytheme\functions.php:33
+Stack trace:
+#0 C:\wamp64\www\CMS\wp-includes\class-wp-hook.php(305): append_query_string('http://localhos...')
+#1 C:\wamp64\www\CMS\wp-includes\plugin.php(189): WP_Hook->apply_filters('http://localhos...', Array)
+#2 C:\wamp64\www\CMS\wp-includes\link-template.php(304): apply_filters('post_link', 'http://localhos...', Object(WP_Post), false)
+#3 C:\wamp64\www\CMS\wp-includes\link-template.php(27): get_permalink(Object(WP_Post))
+#4 C:\wamp64\www\CMS\wp-content\themes\mytheme\index.php(21): the_permalink()
+#5 C:\wamp64\www\CMS\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\C...')
+#6 C:\wamp64\www\CMS\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\C...')
+#7 C:\wamp64\www\CMS\index.php(17): require('C:\\wamp64\\www\\C...')
+#8 {main}
+  thrown in C:\wamp64\www\CMS\wp-content\themes\mytheme\functions.php on line 33
+
