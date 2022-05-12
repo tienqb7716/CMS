@@ -243,18 +243,72 @@ if (!function_exists('buzzstore_main_header')) {
 
 			</div>
 		</div><!-- Main header section -->
-<?php
+		<?php
 	}
 }
 add_action('buzzstore_header', 'buzzstore_main_header', 9);
 
 
-function getNewProducts(){
-	$arg=array(
-	'post_status' =>'publish',
-	'numberposts' =>9,
-	);
-	$product =wc_get_products($arg);
-	return $product;
+/**
+ * Get 3 new post and display them;
+ */
+add_shortcode('group6_new_post', 'group_6_print_new_post');
+if (!function_exists('group_6_print_new_post')) {
+	function group_6_print_new_post()
+	{
+		if (function_exists('add_shortcode')) { ?>
+			<h2><em>New post</em></h2>
+			<div class="row row-cols-1 row-cols-md-3 g-4">
+				<?php
+				$args = array(
+					'post_status' => 'publish', // Chỉ lấy những bài viết được publish
+					'showposts' => 3, // số lượng bài viết
+				);
+				$postquerys = new WP_Query($args);
+
+				if ($postquerys->have_posts()) {
+					while ($postquerys->have_posts()) : $postquerys->the_post();
+				?>
+						<div class="col">
+							<div class="card border-0">
+								<div class="border">
+									<div class="card-img-top">
+										<?php
+										the_post_thumbnail('full', array('class' => 'img-fluid'));
+										?>
+									</div>
+								</div>
+								<div class="card-body card-custom">
+									<a href="<?php the_permalink(); ?>"></a>
+									<h4 class="card-title" style="text-align: center;"><a href=" <?php the_permalink(); ?> " class="text-decoration-none " title=" <?php the_title(); ?> "><?php the_title(); ?></a></h4>
+									<p class="card-text mt-3"> <?php echo get_the_excerpt() ?></p>
+									<span class="badge rounded-pill  text-dark"><?php echo get_the_date(); ?></span>
+								</div>
+
+							</div>
+						</div>
+				<?php endwhile;
+				} ?>
+			</div>
+<?php  }
+	};
 };
 
+/**
+@ Chèn CSS và Javascript vào theme
+@ sử dụng hook wp_enqueue_scripts() để hiển thị nó ra ngoài front-end
+ **/
+function my_styles()
+{
+	/*
+    * Hàm get_stylesheet_uri() sẽ trả về giá trị dẫn đến file style.css của theme
+    * Nếu sử dụng child theme, thì file style.css này vẫn load ra từ theme mẹ
+    */
+	wp_register_style(
+		'main-style',
+		get_template_directory_uri() . '/style.css',
+		'all'
+	);
+	wp_enqueue_style('main-style');
+}
+add_action('wp_enqueue_scripts', 'my_styles');

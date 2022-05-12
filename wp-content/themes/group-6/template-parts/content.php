@@ -12,6 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
+		
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
@@ -29,10 +30,11 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php group_6_post_thumbnail(); ?>
+	<!-- <php group_6_post_thumbnail; ?> -->
 
 	<div class="entry-content">
 		<?php
+	
 		the_content(
 			sprintf(
 				wp_kses(

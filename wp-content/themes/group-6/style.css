@@ -89,6 +89,19 @@ main {
 }
 
 /**
+*Custom
+*/
+.card-custom{
+    border: 2px solid #86bc42;
+    border-radius:0 0 15px 15px;
+}
+.badge{
+    background-color: #86bc42;
+    
+}
+
+
+/**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
@@ -1903,8 +1916,8 @@ object {
 #primary {
     width: 100%;
     /* float: left; */
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     box-shadow: 1px 1px 12px 2px #e1e1e1ba;
     border-radius: 4px;
 }
@@ -2726,6 +2739,14 @@ object {
     height: 300px;
     width: 250px;
     max-width: 100%;
+}
+
+.entry-content h2{
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+.wc-block-featured-product{
+    margin-bottom: 30px;
 }
 
 .wc-block-product-search__label{
@@ -4530,7 +4551,9 @@ ul.product-item-info li a:before {
     width: 0;
     opacity: 0;
 }
-
+.buzz-menulink ul li:hover>a,.buzz-menulink ul ul>li:hover>a{
+    color: yellowgreen!important;
+}
 .product-item {
     line-height: 0;
 }
@@ -4698,14 +4721,14 @@ footer .woocommerce .star-rating {
 ## WooCommerce Add to Cart button
 --------------------------------------------------------------*/
 
-.woocommerce a.button.add_to_cart_button,
+a.add_to_cart_button,
 .woocommerce a.added_to_cart,
 .woocommerce a.button.product_type_grouped,
 .woocommerce a.button.product_type_external,
 .woocommerce a.button.product_type_variable {
     height: 40px;
     padding: 0 30px;
-    line-height: 40px;
+    line-height: 30px;
     margin-top: 0;
     border: 1px solid #86bc42;
     border-radius: 0;
@@ -4796,7 +4819,28 @@ li.product a.added_to_cart:hover,
 /*--------------------------------------------------------------
 ## Product Label
 --------------------------------------------------------------*/
-
+.wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-onsale{
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    top: 7px;
+    font-weight: normal;
+    text-transform: uppercase;
+    width: 56px;
+    z-index: 10;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background-color: #86bc42;
+    color: #ffffff;
+}
+.wc-block-grid__product-title{
+    font-size: 20px;
+}
 .buzz-sale-label {
     font-size: 11px;
     height: 42px;
