@@ -1,0 +1,8 @@
+.buildr-toolbar-link .ab-item {
+    /*background: #f04265 !important;*/
+}
+
+.buildr-toolbar-link .ab-item:before{
+    content: "\f479";
+    top: 3px;
+}

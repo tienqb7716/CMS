@@ -11,8 +11,9 @@
 
 ?>
 
-<div class="container">
+
   <footer class="py-5">
+  <div class="container">
     <div class="row">
       <div class="col-2">
         <h5>Section</h5>
@@ -68,8 +69,9 @@
         <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
       </ul>
     </div>
+    </div>
   </footer>
-</div>
+
 
 <?php wp_footer(); ?>
 
