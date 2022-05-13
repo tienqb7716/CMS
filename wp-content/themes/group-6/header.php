@@ -26,9 +26,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<?php the_permalink(); ?>
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
-		
 			<div class="buzz-container buzz-clearfix">
 				<div class="buzz-site-branding">
 					<button class="buzz-toggle mobile-only" data-toggle-target=".header-mobile-menu" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
