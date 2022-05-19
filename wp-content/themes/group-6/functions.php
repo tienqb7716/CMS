@@ -254,8 +254,7 @@ add_action('buzzstore_header', 'buzzstore_main_header', 9);
  */
 add_shortcode('group6_new_post', 'group_6_print_new_post');
 if (!function_exists('group_6_print_new_post')) {
-	function group_6_print_new_post()
-	{
+	function group_6_print_new_post(){
 		if (function_exists('add_shortcode')) { ?>
 			<h2><em>New post</em></h2>
 			<div class="row row-cols-1 row-cols-md-3 g-4">
@@ -265,10 +264,8 @@ if (!function_exists('group_6_print_new_post')) {
 					'showposts' => 3, // số lượng bài viết
 				);
 				$postquerys = new WP_Query($args);
-
 				if ($postquerys->have_posts()) {
-					while ($postquerys->have_posts()) : $postquerys->the_post();
-				?>
+					while ($postquerys->have_posts()) : $postquerys->the_post();?>
 						<div class="col">
 							<div class="card border-0">
 								<div class="border">
@@ -284,13 +281,12 @@ if (!function_exists('group_6_print_new_post')) {
 									<p class="card-text mt-3"> <?php echo get_the_excerpt() ?></p>
 									<span class="badge rounded-pill  text-dark"><?php echo get_the_date(); ?></span>
 								</div>
-
 							</div>
 						</div>
 				<?php endwhile;
 				} ?>
 			</div>
-<?php  }
+	<?php  }
 	};
 };
 
@@ -312,3 +308,21 @@ function my_styles()
 	wp_enqueue_style('main-style');
 }
 add_action('wp_enqueue_scripts', 'my_styles');
+
+/**
+ * Shopping cart button function area
+*/
+if ( ! function_exists( 'buzzstore_cart_link' ) ) {
+	function buzzstore_cart_link() { ?>
+		<a class="cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'buzzstore' ); ?>">
+			<span class="count">
+			  <?php echo wp_kses_data( sprintf( _n( '%d item -', '%d item(s) -', WC()->cart->get_cart_contents_count(), 'buzzstore' ), WC()->cart->get_cart_contents_count() ) ); ?>
+			</span>
+			<span class="amount">
+			  <?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?>
+			</span> 
+		</a>
+		<?php
+	}
+  }
+  

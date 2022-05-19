@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
 Description: Description
-Version: 1.0.0
+Version: 1.0
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -12,14 +12,6 @@ License URI: LICENSE
 Text Domain: group-6
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned.
-
-group-6 is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
 /*--------------------------------------------------------------
@@ -71,6 +63,7 @@ html {
 	-webkit-text-size-adjust: 100%;
 }
 
+
 /* Sections
 	 ========================================================================== */
 
@@ -95,10 +88,10 @@ main {
     border: 2px solid #86bc42;
     border-radius:0 0 15px 15px;
 }
-.badge{
+/* .badge{
     background-color: #86bc42;
     
-}
+} */
 
 
 /**
@@ -2724,9 +2717,9 @@ object {
 .product-search {
     position: relative;
 }
-.wc-block-product-search.wp-block-woocommerce-product-search form{
+.entry-content .wc-block-product-search.wp-block-woocommerce-product-search form{
     width: 500px;
-    margin: 0 auto;
+    margin-bottom:30px;
 }
 
 .wc-block-product-search__fields .wc-block-product-search__field {
@@ -2760,7 +2753,7 @@ button.wc-block-product-search__button {
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 9999;
+    z-index: 50;
     border-radius: 0 8px 8px 0;
 }
 
@@ -4551,9 +4544,9 @@ ul.product-item-info li a:before {
     width: 0;
     opacity: 0;
 }
-.buzz-menulink ul li:hover>a,.buzz-menulink ul ul>li:hover>a{
+/* .buzz-menulink ul li:hover>a,.buzz-menulink ul ul>li:hover>a{
     color: yellowgreen!important;
-}
+} */
 .product-item {
     line-height: 0;
 }
@@ -7822,4 +7815,7 @@ ul.products.list li.product .woocommerce-product-details__short-description {
         display: inline-block;
         width: 100%;
     }
+}
+.buzz-menulink ul .sub-menu li:hover>a{
+    color:#86Bc42;
 }
