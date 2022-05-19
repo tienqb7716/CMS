@@ -7826,6 +7826,9 @@ ul.products.list li.product .woocommerce-product-details__short-description {
 
 /* FOOTER */
 /************** FOOTER **************/
+#colophon .bg-green{
+    background: #9acd31;
+}
 .site-footer .menu {
     margin: 0;
     padding: 0;
