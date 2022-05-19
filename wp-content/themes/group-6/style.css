@@ -7823,3 +7823,32 @@ ul.products.list li.product .woocommerce-product-details__short-description {
         width: 100%;
     }
 }
+
+/* FOOTER */
+/************** FOOTER **************/
+.site-footer .menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .site-footer .menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.3rem 0;
+  }
+  
+  .site-footer .menu a:hover {
+    text-decoration: underline;
+  }
+footer a{
+    color: #fff;
+}
+
+/* Respoive Search bar */
+@media screen and (max-width: 600px) {
+    .wc-block-product-search.wp-block-woocommerce-product-search form {
+      width: auto;
+    }
+  }

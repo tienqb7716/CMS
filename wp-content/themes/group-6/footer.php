@@ -35,7 +35,7 @@
 <div class="container pt-2 pb-2">
 	<div class="row d-flex align-items-center">
 		<div class="col">
-			<p>&copy; <?php bloginfo( 'name' );?> <?php echo date('Y'); ?> / Created by <a href="https://raddy.co.uk" target="_blank">Raddy</a>
+			<p>&copy; <?php bloginfo( 'name' );?> <?php echo date('Y'); ?> / Created by <a href="https://tuanht99.github.io" target="_blank">Group 6 Shop</a>
 		</div>
 		<div class="col h-25 d-inline-block text-end">
 			<img src="<?php echo get_template_directory_uri(); ?>/img/payment-methods.png" class="img-fluid" loading="lazy" alt="...">
