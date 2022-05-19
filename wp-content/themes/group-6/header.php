@@ -26,7 +26,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<?php the_permalink(); ?>
+	<?php echo do_shortcode('[product]') ?>
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
 			<div class="buzz-container buzz-clearfix">
