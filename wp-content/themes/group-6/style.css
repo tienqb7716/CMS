@@ -7855,3 +7855,8 @@ footer a{
       width: auto;
     }
   }
+
+  /* Nav item hover */
+  .buzz-menulink>div>div>ul>li:hover a{
+      color: #fff !important;
+  }
