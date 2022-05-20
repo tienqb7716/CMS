@@ -19,7 +19,26 @@ if ( ! defined( '_S_VERSION' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function group_6_setup() {
+/**
+@ Chèn CSS và Javascript vào theme
+@ sử dụng hook wp_enqueue_scripts() để hiển thị nó ra ngoài front-end
+ **/
+function my_styles()
+{
+	/*
+    * Hàm get_stylesheet_uri() sẽ trả về giá trị dẫn đến file style.css của theme
+    * Nếu sử dụng child theme, thì file style.css này vẫn load ra từ theme mẹ
+    */
+	wp_register_style(
+		'main-style',
+		get_template_directory_uri() . '/style.css',
+		'all'
+	);
+	wp_enqueue_style('main-style');
+}
+add_action('wp_enqueue_scripts', 'my_styles');
+function group_6_setup()
+{
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
@@ -46,12 +65,22 @@ function group_6_setup() {
 		*/
 	add_theme_support( 'post-thumbnails' );
 
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus(
-		array(
-			'menu-1' => esc_html__( 'Primary', 'group-6' ),
-		)
-	);
+
+	/**
+@ Tạo menu vào theme
+@ sử dụng hook wp_enqueue_scripts() để hiển thị nó ra ngoài front-end
+	 **/
+	add_theme_support('menus');
+
+	function register_menus()
+	{
+		register_nav_menus(
+			array(
+				'top-menu' => 'Top Menu',
+			)
+		);
+	}
+	add_action('init', 'register_menus');
 
 	/*
 		* Switch default core markup for search form, comment form, and comments
@@ -193,3 +222,125 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+//Tạo toggle
+if (!function_exists('buzzstore_main_header')) {
+	function buzzstore_main_header()
+	{ ?>
+		<div class="buzz-main-header">
+			<div class="buzz-container buzz-clearfix">
+				<div class="buzz-site-branding">
+					<button class="buzz-toggle mobile-only" data-toggle-target=".header-mobile-menu" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
+						<div class="one"></div>
+						<div class="two"></div>
+						<div class="three"></div>
+					</button>
+
+
+				</div><!-- .site-branding -->
+
+				<?php do_action('buzzstore_search'); ?>
+				<!-- search section -->
+
+			</div>
+		</div><!-- Main header section -->
+		<?php
+	}
+}
+add_action('buzzstore_header', 'buzzstore_main_header', 9);
+
+
+/**
+ * Get 3 new post and display them;
+ */
+add_shortcode('group6_new_post', 'group_6_print_new_post');
+if (!function_exists('group_6_print_new_post')) {
+	function group_6_print_new_post(){
+		if (function_exists('add_shortcode')) { ?>
+			<h2><em>New post</em></h2>
+			<div class="row row-cols-1 row-cols-md-3 g-4">
+				<?php
+				$args = array(
+					'post_status' => 'publish', // Chỉ lấy những bài viết được publish
+					'showposts' => 3, // số lượng bài viết
+				);
+				$postquerys = new WP_Query($args);
+				if ($postquerys->have_posts()) {
+					while ($postquerys->have_posts()) : $postquerys->the_post();?>
+						<div class="col">
+							<div class="card border-0">
+								<div class="border">
+									<div class="card-img-top">
+										<?php
+										the_post_thumbnail('full', array('class' => 'img-fluid'));
+										?>
+									</div>
+								</div>
+								<div class="card-body card-custom">
+									<a href="<?php the_permalink(); ?>"></a>
+									<h4 class="card-title" style="text-align: center;"><a href=" <?php the_permalink(); ?> " class="text-decoration-none " title=" <?php the_title(); ?> "><?php the_title(); ?></a></h4>
+									<p class="card-text mt-3"> <?php echo get_the_excerpt() ?></p>
+									<span class="badge rounded-pill  text-dark"><?php echo get_the_date(); ?></span>
+								</div>
+							</div>
+						</div>
+				<?php endwhile;
+				} ?>
+			</div>
+	<?php  }
+	};
+};
+
+
+
+/**
+ * Footer Widget One
+*/
+function custom_footer_widget_one() {
+	$args = array(
+		'id' 							=> 'footer-widget-col-one',
+		'name'						=> __('Footer Column One', 'text_domain'),
+		'description'			=> __('Column One', 'text_domain'),
+		'before_title'		=> '<h3 class="title">',
+		'after_title' 		=> '</h3>',
+		'before_widget'		=> '<div id="%1$s" class="widget %2$s">',
+		'after_widget'    => '</div>'
+	);
+	register_sidebar( $args );
+}
+add_action( 'widgets_init', 'custom_footer_widget_one');
+
+
+/**
+ * Footer Widget Two
+*/
+function custom_footer_widget_two() {
+	$args = array(
+		'id' 							=> 'footer-widget-col-two',
+		'name'						=> __('Footer Column Two', 'text_domain'),
+		'description'			=> __('Column One', 'text_domain'),
+		'before_title'		=> '<h3 class="title">',
+		'after_title' 		=> '</h3>',
+		'before_widget'		=> '<div id="%1$s" class="widget %2$s">',
+		'after_widget'    => '</div>'
+	);
+	register_sidebar( $args );
+}
+add_action( 'widgets_init', 'custom_footer_widget_two');
+
+
+/**
+ * Footer Widget Three
+*/
+function custom_footer_widget_three() {
+	$args = array(
+		'id' 							=> 'footer-widget-col-three',
+		'name'						=> __('Footer Column Three', 'text_domain'),
+		'description'			=> __('Column One', 'text_domain'),
+		'before_title'		=> '<h3 class="title">',
+		'after_title' 		=> '</h3>',
+		'before_widget'		=> '<div id="%1$s" class="widget %2$s">',
+		'after_widget'    => '</div>'
+	);
+	register_sidebar( $args );
+}
+add_action( 'widgets_init', 'custom_footer_widget_three');
