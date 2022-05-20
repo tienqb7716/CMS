@@ -26,6 +26,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<?php echo do_shortcode('[product]') ?>
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
 		<nav class="buzz-menulink" id="content">

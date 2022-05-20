@@ -12,7 +12,24 @@ if (!defined('_S_VERSION')) {
 	// Replace the version number of the theme on each release.
 	define('_S_VERSION', '1.0.0');
 }
-
+/**
+@ Chèn CSS và Javascript vào theme
+@ sử dụng hook wp_enqueue_scripts() để hiển thị nó ra ngoài front-end
+ **/
+function my_styles()
+{
+	/*
+    * Hàm get_stylesheet_uri() sẽ trả về giá trị dẫn đến file style.css của theme
+    * Nếu sử dụng child theme, thì file style.css này vẫn load ra từ theme mẹ
+    */
+	wp_register_style(
+		'main-style',
+		get_template_directory_uri() . '/style.css',
+		array(), rand(111,9999), 'all'
+	);
+	wp_enqueue_style('main-style');
+}
+add_action('wp_enqueue_scripts', 'my_styles');
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -48,12 +65,7 @@ function group_6_setup()
 		*/
 	add_theme_support('post-thumbnails');
 
-	// This theme uses wp_nav_menu() in one location.
-	// register_nav_menus(
-	// 	array(
-	// 		'menu-1' => esc_html__( 'Primary', 'group-6' ),
-	// 	)
-	// );
+
 	/**
 @ Tạo menu vào theme
 @ sử dụng hook wp_enqueue_scripts() để hiển thị nó ra ngoài front-end
@@ -131,7 +143,7 @@ function group_6_content_width()
 	$GLOBALS['content_width'] = apply_filters('group_6_content_width', 640);
 }
 add_action('after_setup_theme', 'group_6_content_width', 0);
-
+ 
 /**
  * Register widget area.
  *
@@ -290,39 +302,57 @@ if (!function_exists('group_6_print_new_post')) {
 	};
 };
 
-/**
-@ Chèn CSS và Javascript vào theme
-@ sử dụng hook wp_enqueue_scripts() để hiển thị nó ra ngoài front-end
- **/
-function my_styles()
-{
-	/*
-    * Hàm get_stylesheet_uri() sẽ trả về giá trị dẫn đến file style.css của theme
-    * Nếu sử dụng child theme, thì file style.css này vẫn load ra từ theme mẹ
-    */
-	wp_register_style(
-		'main-style',
-		get_template_directory_uri() . '/style.css',
-		'all'
-	);
-	wp_enqueue_style('main-style');
-}
-add_action('wp_enqueue_scripts', 'my_styles');
+
 
 /**
- * Shopping cart button function area
+ * Footer Widget One
 */
-if ( ! function_exists( 'buzzstore_cart_link' ) ) {
-	function buzzstore_cart_link() { ?>
-		<a class="cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'buzzstore' ); ?>">
-			<span class="count">
-			  <?php echo wp_kses_data( sprintf( _n( '%d item -', '%d item(s) -', WC()->cart->get_cart_contents_count(), 'buzzstore' ), WC()->cart->get_cart_contents_count() ) ); ?>
-			</span>
-			<span class="amount">
-			  <?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?>
-			</span> 
-		</a>
-		<?php
-	}
-  }
-  
+function custom_footer_widget_one() {
+	$args = array(
+		'id' 							=> 'footer-widget-col-one',
+		'name'						=> __('Footer Column One', 'text_domain'),
+		'description'			=> __('Column One', 'text_domain'),
+		'before_title'		=> '<h3 class="title">',
+		'after_title' 		=> '</h3>',
+		'before_widget'		=> '<div id="%1$s" class="widget %2$s">',
+		'after_widget'    => '</div>'
+	);
+	register_sidebar( $args );
+}
+add_action( 'widgets_init', 'custom_footer_widget_one');
+
+
+/**
+ * Footer Widget Two
+*/
+function custom_footer_widget_two() {
+	$args = array(
+		'id' 							=> 'footer-widget-col-two',
+		'name'						=> __('Footer Column Two', 'text_domain'),
+		'description'			=> __('Column One', 'text_domain'),
+		'before_title'		=> '<h3 class="title">',
+		'after_title' 		=> '</h3>',
+		'before_widget'		=> '<div id="%1$s" class="widget %2$s">',
+		'after_widget'    => '</div>'
+	);
+	register_sidebar( $args );
+}
+add_action( 'widgets_init', 'custom_footer_widget_two');
+
+
+/**
+ * Footer Widget Three
+*/
+function custom_footer_widget_three() {
+	$args = array(
+		'id' 							=> 'footer-widget-col-three',
+		'name'						=> __('Footer Column Three', 'text_domain'),
+		'description'			=> __('Column One', 'text_domain'),
+		'before_title'		=> '<h3 class="title">',
+		'after_title' 		=> '</h3>',
+		'before_widget'		=> '<div id="%1$s" class="widget %2$s">',
+		'after_widget'    => '</div>'
+	);
+	register_sidebar( $args );
+}
+add_action( 'widgets_init', 'custom_footer_widget_three');
