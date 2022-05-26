@@ -1,0 +1,194 @@
+2022-04-15T03:54:10+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\CMS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\CMS\wp-includes\general-template.php(3031): do_action('wp_footer')
+#3 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\footer.php(25): wp_footer()
+#4 C:\xampp\htdocs\CMS\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\CMS\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#6 C:\xampp\htdocs\CMS\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#7 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\index.php(36): get_footer()
+#8 C:\xampp\htdocs\CMS\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\CMS\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php on line 303
+
+2022-04-15T03:54:12+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\CMS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\CMS\wp-includes\general-template.php(3031): do_action('wp_footer')
+#3 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\footer.php(25): wp_footer()
+#4 C:\xampp\htdocs\CMS\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\CMS\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#6 C:\xampp\htdocs\CMS\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#7 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\index.php(36): get_footer()
+#8 C:\xampp\htdocs\CMS\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\CMS\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php on line 303
+
+2022-04-15T03:54:46+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "<p>Thank you for reading!</p>" not found or invalid function name in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\CMS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\CMS\wp-includes\general-template.php(3031): do_action('wp_footer')
+#3 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\footer.php(25): wp_footer()
+#4 C:\xampp\htdocs\CMS\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\CMS\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#6 C:\xampp\htdocs\CMS\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#7 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\index.php(36): get_footer()
+#8 C:\xampp\htdocs\CMS\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\CMS\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php on line 303
+
+2022-04-15T03:54:47+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "<p>Thank you for reading!</p>" not found or invalid function name in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\CMS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\CMS\wp-includes\general-template.php(3031): do_action('wp_footer')
+#3 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\footer.php(25): wp_footer()
+#4 C:\xampp\htdocs\CMS\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\CMS\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#6 C:\xampp\htdocs\CMS\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#7 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\index.php(36): get_footer()
+#8 C:\xampp\htdocs\CMS\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\CMS\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php on line 303
+
+2022-04-15T03:55:04+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "<br> <p>Thank you for reading!</p>" not found or invalid function name in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\CMS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\CMS\wp-includes\general-template.php(3031): do_action('wp_footer')
+#3 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\footer.php(25): wp_footer()
+#4 C:\xampp\htdocs\CMS\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\CMS\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#6 C:\xampp\htdocs\CMS\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#7 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\index.php(36): get_footer()
+#8 C:\xampp\htdocs\CMS\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\CMS\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php on line 303
+
+2022-04-15T03:55:05+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "<br> <p>Thank you for reading!</p>" not found or invalid function name in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\CMS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\CMS\wp-includes\general-template.php(3031): do_action('wp_footer')
+#3 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\footer.php(25): wp_footer()
+#4 C:\xampp\htdocs\CMS\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\CMS\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#6 C:\xampp\htdocs\CMS\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#7 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\index.php(36): get_footer()
+#8 C:\xampp\htdocs\CMS\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\CMS\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php on line 303
+
+2022-04-15T03:55:09+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "<br> <p>Thank you for reading!</p>" not found or invalid function name in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\CMS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\CMS\wp-includes\general-template.php(3031): do_action('wp_footer')
+#3 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\footer.php(25): wp_footer()
+#4 C:\xampp\htdocs\CMS\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\CMS\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#6 C:\xampp\htdocs\CMS\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#7 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\index.php(36): get_footer()
+#8 C:\xampp\htdocs\CMS\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\CMS\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php on line 303
+
+2022-04-15T03:55:10+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "<br> <p>Thank you for reading!</p>" not found or invalid function name in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\CMS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\CMS\wp-includes\general-template.php(3031): do_action('wp_footer')
+#3 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\footer.php(25): wp_footer()
+#4 C:\xampp\htdocs\CMS\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\CMS\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#6 C:\xampp\htdocs\CMS\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#7 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\index.php(36): get_footer()
+#8 C:\xampp\htdocs\CMS\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\CMS\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php on line 303
+
+2022-04-15T03:55:31+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "<br> <p>Thank you for reading!</p>" not found or invalid function name in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\CMS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\CMS\wp-includes\general-template.php(3031): do_action('wp_footer')
+#3 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\footer.php(25): wp_footer()
+#4 C:\xampp\htdocs\CMS\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\CMS\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#6 C:\xampp\htdocs\CMS\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#7 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\index.php(36): get_footer()
+#8 C:\xampp\htdocs\CMS\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\CMS\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php on line 303
+
+2022-04-15T03:55:32+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "<br> <p>Thank you for reading!</p>" not found or invalid function name in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\CMS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\CMS\wp-includes\general-template.php(3031): do_action('wp_footer')
+#3 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\footer.php(25): wp_footer()
+#4 C:\xampp\htdocs\CMS\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\CMS\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#6 C:\xampp\htdocs\CMS\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#7 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\index.php(36): get_footer()
+#8 C:\xampp\htdocs\CMS\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\CMS\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php on line 303
+
+2022-04-15T03:55:49+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "<br> <p>Thank you for reading!</p>" not found or invalid function name in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\CMS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\CMS\wp-includes\general-template.php(3031): do_action('wp_footer')
+#3 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\footer.php(25): wp_footer()
+#4 C:\xampp\htdocs\CMS\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\CMS\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#6 C:\xampp\htdocs\CMS\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#7 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\index.php(36): get_footer()
+#8 C:\xampp\htdocs\CMS\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\CMS\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php on line 303
+
+2022-04-15T03:55:50+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "<br> <p>Thank you for reading!</p>" not found or invalid function name in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\CMS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\CMS\wp-includes\general-template.php(3031): do_action('wp_footer')
+#3 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\footer.php(25): wp_footer()
+#4 C:\xampp\htdocs\CMS\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\CMS\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#6 C:\xampp\htdocs\CMS\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#7 C:\xampp\htdocs\CMS\wp-content\themes\mytheme\index.php(36): get_footer()
+#8 C:\xampp\htdocs\CMS\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\CMS\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php on line 303
+
+2022-04-15T04:04:46+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\CMS\wp-content\themes\mytheme\functions.php on line 48
+

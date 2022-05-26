@@ -1,4 +1,5 @@
 <?php
+
 /**
  * group-6 functions and definitions
  *
@@ -7,18 +8,10 @@
  * @package group-6
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
+if (!defined('_S_VERSION')) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define('_S_VERSION', '1.0.0');
 }
-
-/**
- * Sets up theme defaults and registers support for various WordPress features.
- *
- * Note that this function is hooked into the after_setup_theme hook, which
- * runs before the init hook. The init hook is too late for some features, such
- * as indicating support for post thumbnails.
- */
 /**
 @ Chèn CSS và Javascript vào theme
 @ sử dụng hook wp_enqueue_scripts() để hiển thị nó ra ngoài front-end
@@ -37,6 +30,13 @@ function my_styles()
 	wp_enqueue_style('main-style');
 }
 add_action('wp_enqueue_scripts', 'my_styles');
+/**
+ * Sets up theme defaults and registers support for various WordPress features.
+ *
+ * Note that this function is hooked into the after_setup_theme hook, which
+ * runs before the init hook. The init hook is too late for some features, such
+ * as indicating support for post thumbnails.
+ */
 function group_6_setup()
 {
 	/*
@@ -45,10 +45,10 @@ function group_6_setup()
 		* If you're building a theme based on group-6, use a find and replace
 		* to change 'group-6' to the name of your theme in all the template files.
 		*/
-	load_theme_textdomain( 'group-6', get_template_directory() . '/languages' );
+	load_theme_textdomain('group-6', get_template_directory() . '/languages');
 
 	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+	add_theme_support('automatic-feed-links');
 
 	/*
 		* Let WordPress manage the document title.
@@ -56,14 +56,14 @@ function group_6_setup()
 		* hard-coded <title> tag in the document head, and expect WordPress to
 		* provide it for us.
 		*/
-	add_theme_support( 'title-tag' );
+	add_theme_support('title-tag');
 
 	/*
 		* Enable support for Post Thumbnails on posts and pages.
 		*
 		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		*/
-	add_theme_support( 'post-thumbnails' );
+	add_theme_support('post-thumbnails');
 
 
 	/**
@@ -112,7 +112,7 @@ function group_6_setup()
 	);
 
 	// Add theme support for selective refresh for widgets.
-	add_theme_support( 'customize-selective-refresh-widgets' );
+	add_theme_support('customize-selective-refresh-widgets');
 
 	/**
 	 * Add support for core custom logo.
@@ -122,8 +122,8 @@ function group_6_setup()
 	add_theme_support(
 		'custom-logo',
 		array(
-			'height'      => 250,
-			'width'       => 250,
+			'height'      => 150,
+			'width'       => 150,
 			'flex-width'  => true,
 			'flex-height' => true,
 		)
@@ -133,7 +133,7 @@ function group_6_setup()
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array ( 'jquery' ), 1.1, true);
 		
 }
-add_action( 'after_setup_theme', 'group_6_setup' );
+add_action('after_setup_theme', 'group_6_setup');
 
 function _styles() {
 	/*
@@ -155,45 +155,74 @@ function _styles() {
  *
  * @global int $content_width
  */
-function group_6_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'group_6_content_width', 640 );
+function group_6_content_width()
+{
+	$GLOBALS['content_width'] = apply_filters('group_6_content_width', 640);
 }
-add_action( 'after_setup_theme', 'group_6_content_width', 0 );
-
+add_action('after_setup_theme', 'group_6_content_width', 0);
+ 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function group_6_widgets_init() {
+function group_6_widgets_init()
+{
+	//sidebar-1
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'group-6' ),
-			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'group-6' ),
+			'name'          => esc_html__('Right Sidebar', 'group-6'),
+			'id'            => 'buzzsidebarone',
+			'description'   => esc_html__('Add widgets here.', 'group-6'),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
+			'before_title'  => '<h2 class="widget-title wow fadeInUp" data-wow-delay="0.3s">',
 			'after_title'   => '</h2>',
 		)
 	);
+	register_sidebar(array(
+		'name'          => esc_html__('Home Main Widget Area', 'group-6'),
+		'id'            => 'buzzstorehomearea',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title wow fadeInUp" data-wow-delay="0.3s">',
+		'after_title'   => '</h2>',
+	));
+	register_sidebar(array(
+		'name'          => esc_html__('Footer Widget Area One', 'group-6'),
+		'id'            => 'buzzstorefooterone',
+		'description'   => esc_html__('Add widgets here.', 'group-6'),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	));
 }
-add_action( 'widgets_init', 'group_6_widgets_init' );
+add_action('widgets_init', 'group_6_widgets_init');
 
 /**
  * Enqueue scripts and styles.
  */
-function group_6_scripts() {
-	wp_enqueue_style( 'group-6-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'group-6-style', 'rtl', 'replace' );
+function group_6_scripts()
+{
+	wp_enqueue_style('group-6-style', get_stylesheet_uri(), array(), _S_VERSION);
+	wp_style_add_data('group-6-style', 'rtl', 'replace');
 
-	wp_enqueue_script( 'group-6-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script('group-6-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
+	if (is_singular() && comments_open() && get_option('thread_comments')) {
+		wp_enqueue_script('comment-reply');
 	}
+	// thêm thư viện font awesome
+	wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/library/font-awesome/css/font-awesome.min.css', _S_VERSION);
+
+	/* Simple Line Icons */
+	wp_enqueue_style('simple-line-icons', get_template_directory_uri() . '/assets/library/simple-line-icons/css/simple-line-icons.css', _S_VERSION);
+
+	/* Animation */
+	wp_enqueue_style('animate', get_template_directory_uri() . '/assets/library/animate/animate.css', _S_VERSION);
 }
-add_action( 'wp_enqueue_scripts', 'group_6_scripts' );
+add_action('wp_enqueue_scripts', 'group_6_scripts');
 
 /**
  * Implement the Custom Header feature.
@@ -218,7 +247,7 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Load Jetpack compatibility file.
  */
-if ( defined( 'JETPACK__VERSION' ) ) {
+if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 

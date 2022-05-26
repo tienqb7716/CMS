@@ -1,0 +1,6 @@
+2022-05-26T07:32:54+00:00 CRITICAL syntax error, unexpected token "<<", expecting end of file in C:\xampp\htdocs\CMS\wp-content\themes\group-6\functions.php on line 40
+
+2022-05-26T07:34:08+00:00 CRITICAL syntax error, unexpected token "<<" in C:\xampp\htdocs\CMS\wp-content\themes\group-6\single.php on line 43
+
+2022-05-26T07:36:47+00:00 CRITICAL syntax error, unexpected token "<<", expecting end of file in C:\xampp\htdocs\CMS\wp-content\themes\group-6\template-parts\content.php on line 18
+
