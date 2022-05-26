@@ -1,0 +1,12 @@
+2022-04-29T01:07:20+00:00 CRITICAL Uncaught Error: Call to undefined function buzzstore_html_tag_schema() in C:\xampp\htdocs\CMS\wp-content\themes\group-6\header.php:15
+Stack trace:
+#0 C:\xampp\htdocs\CMS\wp-includes\template.php(770): require_once()
+#1 C:\xampp\htdocs\CMS\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\CMS\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\CMS\wp-content\themes\group-6\index.php(15): get_header()
+#4 C:\xampp\htdocs\CMS\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\CMS\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\CMS\wp-content\themes\group-6\header.php on line 15
+

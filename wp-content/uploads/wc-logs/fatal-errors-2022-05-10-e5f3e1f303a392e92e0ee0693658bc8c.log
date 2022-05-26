@@ -1,0 +1,57 @@
+2022-05-10T15:09:12+00:00 CRITICAL syntax error, unexpected token "}" in C:\xampp\htdocs\CMS\wp-content\plugins\take-new-post\take-new-post.php on line 63
+
+2022-05-10T15:09:16+00:00 CRITICAL syntax error, unexpected token "}" in C:\xampp\htdocs\CMS\wp-content\plugins\take-new-post\take-new-post.php on line 63
+
+2022-05-10T15:09:17+00:00 CRITICAL syntax error, unexpected token "}" in C:\xampp\htdocs\CMS\wp-content\plugins\take-new-post\take-new-post.php on line 63
+
+2022-05-10T17:16:38+00:00 CRITICAL Uncaught Error: Call to a member function get_queried_object_id() on null in C:\xampp\htdocs\CMS\wp-includes\query.php:60
+Stack trace:
+#0 C:\xampp\htdocs\CMS\wp-includes\class-wp-query.php(4362): get_queried_object_id()
+#1 C:\xampp\htdocs\CMS\wp-includes\class-wp-query.php(4298): WP_Query->generate_postdata(Object(WP_Post))
+#2 C:\xampp\htdocs\CMS\wp-includes\class-wp-query.php(3330): WP_Query->setup_postdata(Object(WP_Post))
+#3 C:\xampp\htdocs\CMS\wp-content\plugins\take-new-post\take-new-post.php(22): WP_Query->the_post()
+#4 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(303): group_6_print_new_post('')
+#5 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\CMS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\CMS\wp-settings.php(441): do_action('plugins_loaded')
+#8 C:\xampp\htdocs\CMS\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\CMS\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\CMS\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\CMS\wp-admin\plugins.php(10): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+  thrown in C:\xampp\htdocs\CMS\wp-includes\query.php on line 60
+
+2022-05-10T17:16:39+00:00 CRITICAL Uncaught Error: Call to a member function get_queried_object_id() on null in C:\xampp\htdocs\CMS\wp-includes\query.php:60
+Stack trace:
+#0 C:\xampp\htdocs\CMS\wp-includes\class-wp-query.php(4362): get_queried_object_id()
+#1 C:\xampp\htdocs\CMS\wp-includes\class-wp-query.php(4298): WP_Query->generate_postdata(Object(WP_Post))
+#2 C:\xampp\htdocs\CMS\wp-includes\class-wp-query.php(3330): WP_Query->setup_postdata(Object(WP_Post))
+#3 C:\xampp\htdocs\CMS\wp-content\plugins\take-new-post\take-new-post.php(22): WP_Query->the_post()
+#4 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(303): group_6_print_new_post('')
+#5 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\CMS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\CMS\wp-settings.php(441): do_action('plugins_loaded')
+#8 C:\xampp\htdocs\CMS\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\CMS\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\CMS\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#12 {main}
+  thrown in C:\xampp\htdocs\CMS\wp-includes\query.php on line 60
+
+2022-05-10T17:16:44+00:00 CRITICAL Uncaught Error: Call to a member function get_queried_object_id() on null in C:\xampp\htdocs\CMS\wp-includes\query.php:60
+Stack trace:
+#0 C:\xampp\htdocs\CMS\wp-includes\class-wp-query.php(4362): get_queried_object_id()
+#1 C:\xampp\htdocs\CMS\wp-includes\class-wp-query.php(4298): WP_Query->generate_postdata(Object(WP_Post))
+#2 C:\xampp\htdocs\CMS\wp-includes\class-wp-query.php(3330): WP_Query->setup_postdata(Object(WP_Post))
+#3 C:\xampp\htdocs\CMS\wp-content\plugins\take-new-post\take-new-post.php(22): WP_Query->the_post()
+#4 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(303): group_6_print_new_post('')
+#5 C:\xampp\htdocs\CMS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\CMS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\CMS\wp-settings.php(441): do_action('plugins_loaded')
+#8 C:\xampp\htdocs\CMS\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\CMS\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\CMS\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#12 {main}
+  thrown in C:\xampp\htdocs\CMS\wp-includes\query.php on line 60
+
