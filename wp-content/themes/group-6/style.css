@@ -1,6 +1,17 @@
 /*!
 Theme Name: group-6
+<<<<<<< HEAD
+Author: Group 6 
+Description: Description
 Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+Text Domain: group-6
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+=======
+Version: 1.0.0
+>>>>>>> afc9af6003e3bd041682b70f434509e3fbe56e38
 */
 
 /*--------------------------------------------------------------
@@ -961,6 +972,53 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.5em;
+}
+.card{
+	overflow: hidden;
+	box-shadow:  0 0 10px rgba(51, 51, 51, 0.315);
+	border: 0;
+}
+.woocommerce .product .add_to_cart_button {
+	background-color: yellowgreen;
+	margin: 10px auto;
+	text-align: center;
+	display: inline-block;
+}
+.woocommerce ul.products li.product .woocommerce-loop-product__title{
+	font-size: 1.5rem;
+	color: yellowgreen;
+	text-align: center;
+}
+.woocommerce ul.products li.product:hover .woocommerce-loop-product__title{
+	color: rgb(110, 159, 11);
+}
+.product .attachment-woocommerce_thumbnail{
+	transition: .25s;
+}
+.woocommerce ul.products li.product .price{
+	display: block;
+	text-align: center;
+}
+
+.entry-title{
+	text-align: center;
+	font-size: 3rem;
+	color: rgb(110, 159, 11);
+}
+.added_to_cart{
+    border: 1px solid #f5f6f1;
+    border-radius: 10px;
+    text-align: center;
+	margin: 0 auto !important ;
+	font-size: 0.9rem;
+	font-style: italic;
+	font-weight: bold;
+}
+.woocommerce a.added_to_cart{
+	color: yellowgreen;
+}
+.woocommerce .single-product{
+	padding: 1.5rem;
 }
 /* Buzz theme */
 
@@ -4703,8 +4761,7 @@ footer .woocommerce .star-rating {
 ## WooCommerce Add to Cart button
 --------------------------------------------------------------*/
 
-a.add_to_cart_button,
-.woocommerce a.added_to_cart,
+
 .woocommerce a.button.product_type_grouped,
 .woocommerce a.button.product_type_external,
 .woocommerce a.button.product_type_variable {
@@ -4734,8 +4791,7 @@ a.add_to_cart_button,
 }
 
 
-.woocommerce a.added_to_cart:before,
-.woocommerce a.button.add_to_cart_button:before,
+
 .woocommerce a.button.product_type_grouped:before,
 .woocommerce a.button.product_type_external:before,
 .woocommerce a.button.product_type_variable:before  {
@@ -4778,7 +4834,7 @@ a.add_to_cart_button,
     padding-left: 45px;
 }
 
-.woocommerce a.button.add_to_cart_button:hover,
+ .woocommerce a.button.add_to_cart_button:hover,
 li.product a.added_to_cart:hover,
 .woocommerce #respond input#submit:hover,
 .woocommerce button.button:hover,
@@ -4898,8 +4954,10 @@ li.product a.added_to_cart:hover,
 
 .woocommerce ul.products li.product a img {
     margin: 0;
+    width: 100%;
+    height: 300px;
 }
-
+.addded_
 .woocommerce .products ul,
 .woocommerce ul.products {
     margin: 0;
