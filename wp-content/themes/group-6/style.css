@@ -7903,3 +7903,9 @@ footer a{
   /* .buzz-menulink>div>div>ul>li:hover a{
       color: #fff !important;
   } */
+  .entry-header .entry-title{
+      margin-top: 70px !important;
+  }
+  .added_to_cart{
+      display: block !important;
+  }
